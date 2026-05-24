@@ -14,8 +14,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
-    origin: "https://semi-final-hackathon.vercel.app/",
-    "https://semi-final-hackathon-mgnp.vercel.app",
+    origin: [
+      "https://semi-final-hackathon.vercel.app",
+      "https://semi-final-hackathon-mgnp.vercel.app",
+      "http://localhost:5173"
+    ],
     credentials: true,
   }),
 );
