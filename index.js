@@ -15,6 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
     origin: "https://semi-final-hackathon.vercel.app/",
+    "https://semi-final-hackathon-mgnp.vercel.app",
     credentials: true,
   }),
 );
